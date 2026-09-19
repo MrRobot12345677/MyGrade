@@ -2,25 +2,26 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Мой средний балл</title>
 
 <style>
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    padding: 20px;
     font-family: Arial, sans-serif;
     background: #f2f4f7;
-    color: #222;
 }
 
 .container {
     width: 90%;
     max-width: 600px;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 30px;
     background: white;
     border-radius: 20px;
@@ -33,28 +34,27 @@ h1 {
 }
 
 p {
-    text-align: center;
     color: #777;
 }
 
-input {
-    width: 100%;
-    padding: 14px;
-    margin-top: 10px;
-    font-size: 17px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
+input,
 button {
     width: 100%;
     padding: 14px;
-    margin-top: 20px;
-    border: none;
+    margin-top: 10px;
+    font-size: 16px;
     border-radius: 10px;
+}
+
+input {
+    border: 1px solid #ccc;
+}
+
+button {
     background: #333;
     color: white;
-    font-size: 17px;
+    border: none;
+    cursor: pointer;
 }
 
 #result {
@@ -66,7 +66,7 @@ button {
 }
 
 .average {
-    font-size: 42px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -80,7 +80,6 @@ button {
         width: 100%;
         margin: 20px auto;
         padding: 22px 18px;
-        border-radius: 16px;
     }
 
     h1 {
@@ -97,7 +96,6 @@ button {
         font-size: 38px;
     }
 }
-
 </style>
 </head>
 
