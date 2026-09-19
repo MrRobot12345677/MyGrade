@@ -193,4 +193,3 @@ function calculate() {
 </script>
 
 </body>
-</html>
