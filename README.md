@@ -5,15 +5,22 @@
 <title>Мой средний балл</title>
 
 <style>
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
+    margin: 0;
+    font-family: Arial, sans-serif;
     background: #f2f4f7;
-    padding: 50px;
+    color: #222;
 }
 
 .container {
+    width: 90%;
     max-width: 600px;
-    margin: auto;
+    margin: 50px auto;
     padding: 30px;
     background: white;
     border-radius: 20px;
@@ -22,26 +29,32 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 32px;
 }
 
-input, button {
-    width: 100%;
-    padding: 14px;
-    margin-top: 10px;
-    box-sizing: border-box;
-    font-size: 16px;
-    border-radius: 10px;
+p {
+    text-align: center;
+    color: #777;
 }
 
 input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    font-size: 17px;
     border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
     background: #333;
     color: white;
-    border: none;
-    cursor: pointer;
+    font-size: 17px;
 }
 
 #result {
@@ -53,9 +66,38 @@ button {
 }
 
 .average {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: bold;
 }
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 20px auto;
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    input,
+    button {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .average {
+        font-size: 38px;
+    }
+}
+
 </style>
 </head>
 
@@ -154,98 +196,3 @@ function calculate() {
 
 </body>
 </html>
-<style>
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f2f4f7;
-    color: #222;
-}
-
-.container {
-    width: 90%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px #ddd;
-}
-
-h1 {
-    text-align: center;
-    font-size: 32px;
-}
-
-p {
-    text-align: center;
-    color: #777;
-}
-
-input {
-    width: 100%;
-    padding: 14px;
-    margin-top: 10px;
-    font-size: 17px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-button {
-    width: 100%;
-    padding: 14px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-    background: #333;
-    color: white;
-    font-size: 17px;
-}
-
-#result {
-    margin-top: 25px;
-    padding: 20px;
-    background: #f5f5f5;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.average {
-    font-size: 42px;
-    font-weight: bold;
-}
-
-@media (max-width: 600px) {
-
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        width: 100%;
-        margin: 20px auto;
-        padding: 22px 18px;
-        border-radius: 16px;
-    }
-
-    h1 {
-        font-size: 27px;
-    }
-
-    input,
-    button {
-        font-size: 18px;
-        padding: 15px;
-    }
-
-    .average {
-        font-size: 38px;
-    }
-}
-
-</style>
